@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <title>Bubble Shooter</title>
+  <link rel="stylesheet" href="_css/main.css" />
+  <script src="_js/modernizr.js" type="text/javascript" async></script>
+  <script src="_js/jquery-3.3.1.min.js" type="text/javascript" defer></script>
+  <script src="_js/ui.js" type="text/javascript" defer></script>
+  <script src="_js/game.js" type="text/javascript" defer></script>
+<script type="text/javascript" defer>
+// it might be said:
+$(function() {
+  var game = new BubbleShoot.Game()
+  game.init()
+})()
+</script>
+</head>
+<body>
+  <!-- It might be said -->
+  <div id="page">
+    <div id="top_bar"></div>
+    <div id="game"></div>
+    <div id="footer_bar"></div>
+
+    <div id="start_game" class="dialog">
+      <div id="start_game_message">
+        <h2>Start a new game</h2>
+      </div>
+      <div class="but_start_game button">
+        New Game
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
